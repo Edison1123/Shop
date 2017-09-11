@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/maintab_toolbar_bg"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/main_tab"
+        >
+        <RadioButton
+            android:id="@+id/radio_home"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/home"
+            android:checked="true"
+            android:text="@string/home"
+            />
+        <RadioButton
+            android:id="@+id/radio_car"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/car"
+            android:text="@string/car"
+            />
+        <RadioButton
+            android:id="@+id/radio_sort"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/type"
+            android:text="@string/type"
+            />
+        <RadioButton
+            android:id="@+id/radio_search"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/search"
+            android:text="@string/search"
+            />
+        <RadioButton
+            android:id="@+id/radio_me"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/me"
+            android:text="@string/me"
+            />
+    </RadioGroup>
+
+</LinearLayout>
